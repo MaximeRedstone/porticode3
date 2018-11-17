@@ -1,106 +1,141 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-	<meta name="description" content="GrandMothers Tea Website"> 
-	<meta name="keywords" content="Grandma, grandmothers, tea">
+	<!doctype html>
+	<html lang="en">
+	  <head>
+		<meta charset="utf-8">
+		<meta name="description" content="GrandMothers Tea Website"> 
+		<meta name="keywords" content="Grandma, grandmothers, tea">
+
+		<link rel="shortcut icon" type="image/png" href="../images/tea_log.png/">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="G&T">
+		<meta name="author" content="PhYsIcisTS R KOol">
+
+		<title>TA - Teaholics Anynomous</title>
+
+		<!-- Bootstrap CSS  -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+		<!-- Custom styles for this template -->
+		<link href="css/stylesheet.css" rel="stylesheet">
 		  
-    <link rel="shortcut icon" type="image/png" href="../images/tea_log.png/">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="G&T">
-    <meta name="author" content="PhYsIcisTS R KOol">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>TA - Teaholics Anynomous</title>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Bootstrap CSS  -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+		<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+			<style type="text/css">
+				#mc_embed_signup{background:#fff; clear:left; font:25px Helvetica,Arial,sans-serif; width:100%;}
+				/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+				   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+			</style>
+	  </head>
 
-    <!-- Custom styles for this template -->
-    <link href="css/stylesheet.css" rel="stylesheet">
-			
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	 
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	  <body>
 
-	<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-		<style type="text/css">
-			#mc_embed_signup{background:#fff; clear:left; font:25px Helvetica,Arial,sans-serif; width:100%;}
-			/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-			   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-		</style>
-  </head>
-	
-  <body>
-			
-    <!-- Navigation -->
-    <!-- Navbar to the right -->
-			<!-- Image and text -->
-    <nav class="navbar navbar-right navbar-light sticky-top navbar-expand-md bg-light">
-      <div class="container-fluid">
-        <!-- Titre -->
-        <a class="navbar-brand" href="#"><img src="../images/tea_logo.svg" width="50px" height="50px" class="d-inline-block align-center"> TA - Teaholics Anonymous</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarFrancosoc">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarFrancosoc">
-          <ul class="nav navbar-nav ml-auto">
-              <a class="nav-link" href="#TeaCalc">Tea Calculator</a>
-              <a class="nav-link" href="#TeaDay">Tea of the day</a>
-			  <a class="nav-link" href="recipes.html">Recipes</a>
-			  <a class="nav-link" href="#TeaList">Full List of Tea</a>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div>
-        
-      <!--Intro Section-->
-      <div id="About" class="full_background">
-		<div class="row align-items-center text-center">
-			<h1 class="titles_font welcome vertical">Welcome to a stress free environment</h1>
-		</div>
-      </div>
-		
-	  <!-- Tea Calculator -->
-      <div id="TeaCalc" class="full_background">
-		<div class="row align-items-center text-center">
-			<h1 class="titles_font calculator vertical">The right tea for the right mood!</h1>	
-			<div class="dropdown">
-			 <input type="button" id='script' name="scriptbutton" value=" Run Script " onclick="exec('Test.py');">
+		<!-- Navigation -->
+		<!-- Navbar to the right -->
+				<!-- Image and text -->
+		<nav class="navbar navbar-right navbar-light sticky-top navbar-expand-md bg-light">
+		  <div class="container-fluid">
+			<!-- Titre -->
+			<a class="navbar-brand" href="#"><img src="../images/tea_logo.svg" width="50px" height="50px" class="d-inline-block align-center"> TA - Teaholics Anonymous</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarFrancosoc">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarFrancosoc">
+			  <ul class="nav navbar-nav ml-auto">
+				  <a class="nav-link" href="#TeaCalc">Tea Calculator</a>
+				  <a class="nav-link" href="#TeaDay">Tea of the day</a>
+				  <a class="nav-link" href="recipes.html">Recipes</a>
+				  <a class="nav-link" href="#TeaList">Full List of Tea</a>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+		<div>
+
+		  <!--Intro Section-->
+		  <div id="About" class="full_background">
+			<div class="row align-items-center text-center">
+				<h1 class="titles_font welcome vertical">Welcome to a stress free environment</h1>
+			</div>
+		  </div>
+
+		  <!-- Tea Calculator -->
+		  <div id="TeaCalc" class="full_background">
+			<div class="row align-items-center text-center">
+				<h1 class="titles_font calculator vertical">The right tea for the right mood!</h1>
+			  </div>
+			  <div class="form">
+				<form class="row align-items-center text-form">
+					Select your mood
+					<select id="mood">
+					  <option>Happy</option>
+					  <option>Energetic</option>
+					  <option>Adventerous</option>
+					  <option>Homely</option>
+					  <option>Relaxed</option>
+					</select>
+					<br><br>
+					<input type="button" onclick="Doingstuff()" value="Get your tea!">
+					</form>
+				<form class="row align-items-center form text-form">
+					Select your preferred flavour:
+					<select id="flavour">
+					  <option>Nutty</option>
+					  <option>Bitter</option>
+					  <option>Sweet</option>
+					  <option>Fruity</option>
+					  <option>Minty</option>
+					</select>
+					<br><br>
+					<input type="button" onclick="Doingstuff()" value="Get your tea!">
+					</form>
 			</div>
 		</div>
-    </div>
-    
 
-					
-<!--
-    <div id="Sponsors" class="full_bg_spons">
-    	<div class="container">
-      		<p class="text-center">Sponsors</p>
-    	</div>
-	</div>				
--->
+		<div id="#TeaDay" class="full_background">
+	</div>
 
-    <!-- Add search bar for entering email adress -->
-	  
-      <!-- Footer -->
-      <footer class="black_txt" style="padding-bottom: 20px">
-        <div class="container_foot">
-          <p class="m-0 text-center text-small">Copyright &copy; Physicists R Kool 2018</p>
-        </div>
-        <!-- /.container -->
-      </footer>
-        
-
-    <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<script>
+function Doingstuff() {
+    x = document.getElementById("mood");
+	y = document.getElementById("flavour");
 	
-	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  	 <script>
-    	AOS.init();
-  	 </script>
-  </body>
-</html>
+
+}
+	
+</script>
+	<!--
+		<div id="Sponsors" class="full_bg_spons">
+			<div class="container">
+				<p class="text-center">Sponsors</p>
+			</div>
+		</div>				
+	-->
+
+		<!-- Add search bar for entering email adress -->
+
+		  <!-- Footer -->
+		  <footer class="black_txt" style="padding-bottom: 20px">
+			<div class="container_foot">
+			  <p class="m-0 text-center text-small">Copyright &copy; Physicists R Kool 2018</p>
+			</div>
+			<!-- /.container -->
+		  </footer>
+
+
+		<!-- JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+		 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		 <script>
+			AOS.init();
+		 </script>
+	  </body>
+	</html>
