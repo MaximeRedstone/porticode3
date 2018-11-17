@@ -1,0 +1,165 @@
+/*Navigation bar styles*/
+
+.nav-link:hover {
+ 	border-bottom: 2px solid royalblue;
+}
+.fa {
+	padding: 10px;
+	font-size: 30px;
+	width: 30px;
+}
+
+/*General styles for whole website*/
+
+.full_background {
+	height: 100vh;
+	margin: auto;
+}
+
+.full_bg_news {
+	height: 50vh;
+	background-size: cover;
+	background-color: white;
+}
+
+.full_bg_spons: {
+	height: 80vh;
+	background-size: cover;
+	background-color: white;
+}
+
+@font-face {
+font-family: titles_font ;
+src: url(/FREEBSC_.ttf);
+}
+
+.titles_font {
+	margin-bottom: 5vw;
+	font-size: 10vw;
+	font-size: 10vh;
+	font-family: titles_font;
+}
+
+.welcome {
+	color: rgba(209, 76, 183);
+	align-content: center;
+	margin-top: 5vw;
+}
+
+.paragraphs {
+	margin: 3vw;
+	color: black;
+	font-size: 3vw;
+	font-size: 3vh;
+	align-content: center;
+}
+
+.red_txt {
+	color: red;
+}
+
+.card-bg-primary {
+	width: 400px;
+	height: 400px;
+	color: aqua;
+	box-shadow: 20px 10px 10px aqua;
+}
+
+.section-widget-title {
+	font-size: 3vw;
+	font-size: 3vh;
+}
+
+@media only screen and (max-width: 300px) {
+    black_txt {
+        font-size: 2em;
+    }
+	
+	white_txt {
+		font-size: 2em;
+	}
+	
+	title {
+		font-size: 3em;
+	}
+	
+	
+}
+
+
+/*Styles by section of content*/
+
+#About {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url('../images/background.jpg');
+}
+
+#Events {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+  	background-image: url('../media/cover/events1.jpg');
+}
+
+	.podium {
+		width: 60px;
+		height: 60px;
+	}
+
+	.drinks {
+		width: 60px;
+		height: 60px;
+	}
+
+	.societies {
+		width: 60px;
+		height: 60px;
+	}
+
+	.white_txt_events {
+		margin-left: 5vw;
+		margin-right: 5vw;
+		color: white;
+	/*  	font-size: 25px;*/
+		font-size: 2vw;
+		font-size: 2vh;
+	}
+
+#Classes {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+  	background-image: url('../media/cover/classes.jpg!d');
+	}
+
+	.tbody {
+		text-align: center;
+	}
+
+	.table {
+		display: table;
+		border-collapse: separate;
+		border-spacing: 2px;
+		border-color: black;
+	}
+
+#Sign-up {
+		background-color: white;
+	}
+
+
+#Le_Journal {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+    background-image: url('https://media.giphy.com/media/l378h7yBiPDAVHIOY/giphy.gif');
+}
+
+/*#Sponsors*/
+
+
+/*#Newsletter*/
+
+.div.mc-field-group label {
+	text-align: center;
+	padding-bottom: 4px;
+	font-size: 4px;
+}
