@@ -1,0 +1,35 @@
+.background {
+    background-color: bisque;
+    background-size: cover;
+    background-image: url('../images/recipies.jpg');
+}
+
+.recipe_title {
+    font-size: 4vw;
+    font-style: italic;
+    font-family: cursive;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.recipe_minor_title { 
+    font-size: 2vw;
+    font-style: normal;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: right;
+    margin-right: 20%;
+}
+
+.recipe_information {
+    font-size: 1vw;
+    font-style: normal;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin-left: 70%;
+    text-align: left;
+    text-align: justify;
+    margin-right: 2%;
+}
+
+
+
+
