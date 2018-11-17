@@ -13,6 +13,8 @@
 
 .full_background {
 	height: 100vh;
+	width: 100vw;
+	background-size: 100% 100%;
 	margin: auto;
 }
 
@@ -44,6 +46,34 @@ src: url(/FREEBSC_.ttf);
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10vh;
+}
+
+.output_teas {
+	margin: 5%;
+	font-size: 4vh;
+}
+
+.teaday {
+	color: rgba(209, 76, 183);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10vh;
+}
+
+.container {
+	align-content: left;
+	position: sticky;
+}
+
+.textday1 {
+	font-size: 4vh;
+	font-family: titles_font;
+}
+
+.textday2 {
+	font-family: titles_font;
+	font-size: 6vh;
+	color: rgba(209, 76, 183);
 }
 
 /* Dropdown Button */
@@ -127,13 +157,20 @@ src: url(/FREEBSC_.ttf);
   	background-image: url('../images/teacalc.jpg');
 }
 
+#TeaDay {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url('../images/teaofday.jpg');
+}
+
 .form {
-	margin: 20%;
+	margin: 10%;
 }
 
 .text-form {
 	font-size: 2vh;
 	font-size: 2vw;
+	text-align: center;
 }
 
 #Classes {
