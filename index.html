@@ -47,6 +47,7 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarFrancosoc">
 		  <ul class="nav navbar-nav ml-auto">
+			  <a class="nav-link" href="index.html#">Welcome Page</a>
 			  <a class="nav-link" href="#TeaCalc">Tea Calculator</a>
 			  <a class="nav-link" href="#TeaDay">Tea of the day</a>
 			  <a class="nav-link" href="recipes.html">Recipes</a>
@@ -60,6 +61,7 @@
 	  <div id="About" class="full_background">
 		<div class="row align-items-center text-center">
 			<h1 class="titles_font welcome vertical">Welcome to a stress free environment</h1>
+			<p class="text-intro">Had enough of the grandkids stressing you out this weekend? Has your once pristine house become cluttered with toys? Why not use our website to find the perfect cuppa tea to fit your mood?</p>
 		</div>
 	  </div>
 
@@ -71,7 +73,7 @@
 		<div class="form overlayer">
 			<form class="text-form">
 				Select your mood...
-				<select id="mood">
+				<select id="mood" class="text-form">
 				  <option>Happy</option>
 				  <option>Energetic</option>
 				  <option>Adventerous</option>
@@ -80,12 +82,12 @@
 				  <option>Healthy</option>
 				  <option>Refreshed</option>
 				</select>
-				<input type="button" onclick="Doingstuff()" value="Get your tea!">
+				<input type="button" class="text-form" onclick="Doingstuff()" value="Get your tea!">
 				<p id="Result1" class="output_teas"></p>
 				</form>
 			<form class="text-form">
 				Or select your preferred flavour...
-				<select id="flavour">
+				<select id="flavour" class="text-form">
 				  <option>Nutty</option>
 				  <option>Bitter</option>
 				  <option>Sweet</option>
@@ -100,7 +102,7 @@
 				  <option>Strong</option>
 				  <option>Mild</option>
 				</select>
-				<input type="button" onclick="Doingstuff()" value="Get your tea!">
+				<input type="button" class="text-form" onclick="Doingstuff()" value="Get your tea!">
 				<p id="Result2" class="output_teas background_output_teas"></p>
 			</form>
 		</div>
@@ -125,7 +127,7 @@
 	  <!-- Footer -->
 	  <footer class="black_txt" style="padding-bottom: 20px">
 		<div class="container_foot">
-		  <p class="m-0 text-center text-small">Copyright &copy; Physicists R Kool 2018</p>
+		  <p class="m-0 text-center text-small text-form">Copyright &copy; Physicists R Kool 2018</p>
 		</div>
 		<!-- /.container -->
 	  </footer>

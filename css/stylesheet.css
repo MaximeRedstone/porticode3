@@ -21,6 +21,7 @@
 .vertical {
 	align-items: center;
 	margin-top: 3vw;
+	margin-bottom: 1vh;
 }
 
 @font-face {
@@ -41,6 +42,16 @@ src: url(/FREEBSC_.ttf);
 	margin-right: auto;
 }
 
+.text-intro {
+	color: darkslategrey;
+	font-size: 3vh;
+	text-align: right;
+	margin-left: 30%;
+	margin-right: 5%;
+	text-align: justify;
+	
+}
+
 .calculator {
 	color: rgba(209, 76, 183);
 	margin-left: auto;
@@ -53,15 +64,6 @@ src: url(/FREEBSC_.ttf);
 	font-size: 4vh;
 	color: rgba(209, 76, 183);
 }
-
-/*
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 5s;
-}
-*/
 
 .teaday {
 	color: rgba(209, 76, 183);
@@ -190,4 +192,5 @@ src: url(/FREEBSC_.ttf);
 	font-size: 2vh;
 	font-size: 2vw;
 	text-align: center;
+	color: darkslategrey;
 }
