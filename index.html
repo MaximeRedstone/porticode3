@@ -5,13 +5,13 @@
 	<meta name="description" content="GrandMothers Tea Website"> 
 	<meta name="keywords" content="Grandma, grandmothers, tea">
 
-	<link rel="shortcut icon" type="image/jpg" href="../images/weblogo.jpg/">
+	<link rel="shortcut icon" type="image/png" href="/images/tea_logo.png">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="G&T">
 	<meta name="author" content="PhYsIcisTS R KOol">
 
-	<title>TA - Teaholics Anynomous</title>
+	<title>Teaholics Anynomous</title>
 
 	<!-- Bootstrap CSS  -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
@@ -41,7 +41,7 @@
 	<nav class="navbar navbar-right navbar-light sticky-top navbar-expand-md bg-light">
 	  <div class="container-fluid">
 		<!-- Titre -->
-		<a class="navbar-brand" href="#"><img src="../images/tea_logo.svg" width="50px" height="50px" class="d-inline-block align-center"> TA - Teaholics Anonymous</a>
+		<a class="navbar-brand" href="#"><img src="../images/tea_logo.svg" width="50px" height="50px" class="d-inline-block align-center"> Teaholics Anonymous</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarFrancosoc">
 		  <span class="navbar-toggler-icon"></span>
 		</button>
@@ -50,7 +50,6 @@
 			  <a class="nav-link" href="#TeaCalc">Tea Calculator</a>
 			  <a class="nav-link" href="#TeaDay">Tea of the day</a>
 			  <a class="nav-link" href="recipes.html">Recipes</a>
-			  <a class="nav-link" href="#TeaList">Full List of Tea</a>
 		  </ul>
 		</div>
 	  </div>
@@ -68,8 +67,8 @@
 	  <div id="TeaCalc" class="full_background">
 		<div class="row align-items-center text-center">
 			<h1 class="titles_font calculator vertical">The right tea for the right mood!</h1>
-		  </div>
-		  <div class="form">
+		</div>
+		<div class="form overlayer">
 			<form class="text-form">
 				Select your mood...
 				<select id="mood">
@@ -84,7 +83,6 @@
 				<input type="button" onclick="Doingstuff()" value="Get your tea!">
 				<p id="Result1" class="output_teas"></p>
 				</form>
-			  <br>
 			<form class="text-form">
 				Or select your preferred flavour...
 				<select id="flavour">
@@ -103,11 +101,9 @@
 				  <option>Mild</option>
 				</select>
 				<input type="button" onclick="Doingstuff()" value="Get your tea!">
-				<p id="Result2" class="output_teas"></p>
-<!--				<output name="x" for="Result"></output>-->
+				<p id="Result2" class="output_teas background_output_teas"></p>
 			</form>
 		</div>
-		  <p id="Results"></p>
 	</div>
 
 		<!-- Tea of the Day -->
@@ -157,48 +153,47 @@
 		  newText = randomStrings[randomIndex];
 		  randomDiv.innerHTML = newText;
 	});
-</script>  
+	</script>  
 
-		<!-- Get your tea script -->
-		<script>
-function Doingstuff() {
-	console.log("Debut fonction")
-	
-x = document.getElementById("mood");
-y = document.getElementById("flavour");
+	<!-- Get your tea script -->
+	<script>
+		function Doingstuff() {
+		console.log("Debut fonction")
 
-var teas = ["Barley Tea", "Black Tea", "Chaga Tea", "Chai Tea", "Chamomile Tea", "Chrysanthemum Tea", "Dandelion Tea", "Essiac Tea", "Green Tea", "Hibiscus Tea", "Matcha Tea", "Moringa Tea", "Nettle Tea", "Oolong Tea", "Peppermint Tea", "Pu-erh Tea", "Pau d'arco Tea", "Rasberry leaf Tea", "Rooibos Tea", "Rose Tea", "Senna Tea"," Sencha Tea", "Spearmint Tea", "White Tea", "Yerba Mate Tea", "Earl Grey Tea"];
+		x = document.getElementById("mood");
+		y = document.getElementById("flavour");
 
-var mood = ["Happy", "Energetic", "Adventerous ", "Homely","Relaxed","Relaxed","Adventerous ","Adventerous","Homely","Healthy","Healthy","Healthy","Healthy","Homely","Refreshed","Energetic","Happy","Healthy","Happy","Happy","Adventerous","Adventerous","Refreshed","Relaxed","Energetic","Adventerous "];
+		var teas = ["Barley Tea", "Black Tea", "Chaga Tea", "Chai Tea", "Chamomile Tea", "Chrysanthemum Tea", "Dandelion Tea", "Essiac Tea", "Green Tea", "Hibiscus Tea", "Matcha Tea", "Moringa Tea", "Nettle Tea", "Oolong Tea", "Peppermint Tea", "Pu-erh Tea", "Pau d'arco Tea", "Rasberry leaf Tea", "Rooibos Tea", "Rose Tea", "Senna Tea"," Sencha Tea", "Spearmint Tea", "White Tea", "Yerba Mate Tea", "Earl Grey Tea"];
 
-var flavour = ["Bitter", "Bitter", "Mushroom", "Cinnamon", "Bitter", "Sweet", "Floral", "Bitter", "Bitter", "Tart", "Bitter", "Grassy", "Grassy", "Bitter", "Minty", "Bitter", "Fruity", "Grassy", "Fruity", "Sweet", "Bitter", "Mild", "Minty", "Mild", "Woodsy","Strong"];
+		var mood = ["Happy", "Energetic", "Adventerous ", "Homely","Relaxed","Relaxed","Adventerous ","Adventerous","Homely","Healthy","Healthy","Healthy","Healthy","Homely","Refreshed","Energetic","Happy","Healthy","Happy","Happy","Adventerous","Adventerous","Refreshed","Relaxed","Energetic","Adventerous "];
 
-var i;
-var total_names = [];
+		var flavour = ["Nutty", "Bitter", "Mushroom", "Cinnamon", "Bitter", "Sweet", "Floral", "Bitter", "Bitter", "Tart", "Bitter", "Grassy", "Grassy", "Bitter", "Minty", "Bitter", "Fruity", "Grassy", "Fruity", "Sweet", "Bitter", "Mild", "Minty", "Mild", "Woodsy","Strong"];
 
-for (i =0; i < teas.length; i++) {
-	if (x.value == mood[i]) {
-		total_names.push(teas[i]);
-	}
- }
+		var i;
+		var total_names = [];
 
-var total_names2 = [];
-	
-for (i =0; i < teas.length; i++) {
-	if (y.value == flavour[i]) {
-		total_names2.push(teas[i]);
-	}
- }
-console.log(total_names);
-console.log(total_names2);
-	
-total_names.toString();
-document.getElementById("Result1").innerHTML=total_names;
+		for (i =0; i < teas.length; i++) {
+			if (x.value == mood[i]) {
+				total_names.push(teas[i]);
+			}
+		 }
 
-total_names2.toString();
-document.getElementById("Result2").innerHTML=total_names2;	
-	
-}
-</script>
+		var total_names2 = [];
+
+		for (i =0; i < teas.length; i++) {
+			if (y.value == flavour[i]) {
+				total_names2.push(teas[i]);
+			}
+		 }
+		console.log(total_names);
+		console.log(total_names2);
+
+		total_names.toString();
+		document.getElementById("Result1").innerHTML=total_names;
+
+		total_names2.toString();
+		document.getElementById("Result2").innerHTML=total_names2;	
+		}
+		</script>
   </body>
 </html>
