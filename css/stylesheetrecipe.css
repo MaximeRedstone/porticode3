@@ -16,7 +16,7 @@
     font-size: 4.7vh;
     font-style: italic;
     font-family: cursive;
-    text-align: right;
+    text-align: center;
     margin-right: 10px;
     color: white;
 }
@@ -93,9 +93,9 @@
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: blue;
+  color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
   border-radius: 0 3px 3px 0;
 }
 
